@@ -1,2 +1,2 @@
 # vibe_me_archplot
-명함만들기
+자기소개서 만들기
