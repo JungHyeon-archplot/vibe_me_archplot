@@ -131,3 +131,51 @@ footer {
   background-color: var(--brand);
   color: #ffffff;
 }
+
+/* 모달 오버레이: 기본은 숨김, 열릴 때 부드럽게 나타남 */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+/* 모달 열림 상태 */
+.modal.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* 모달 내용 박스 */
+.modal__box {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  transform: translateY(12px) scale(0.96);
+  transition: transform 0.25s ease;
+}
+
+/* 열릴 때 박스가 살짝 올라오며 확대 */
+.modal.is-open .modal__box {
+  transform: translateY(0) scale(1);
+}
+
+/* 모달 닫기 버튼 */
+#closeBtn {
+  display: block;
+  margin: 16px auto 0;
+  color: #ffffff;
+  background-color: var(--brand);
+  border: none;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-family: inherit;
+  cursor: pointer;
+}
