@@ -46,6 +46,7 @@ header {
 .bio {
   font-size: 15px;
   line-height: 1.6;
+  text-align: center;
 }
 
 /* 자기소개 카드: 흰 배경, 여백, 둥근 모서리, 은은한 그림자 + 등장 애니메이션 */
