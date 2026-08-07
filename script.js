@@ -1,6 +1,8 @@
 const modal = document.querySelector('#modal');
 const openBtn = document.querySelector('#contanctBtn');
 const closeBtn = document.querySelector('#closeBtn');
+const themeBtn = document.querySelector('#themeBtn');
+const themeIcon = document.querySelector('#themeIcon');
 
 function openModal() {
   modal.classList.add('is-open');
@@ -25,4 +27,22 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeModal();
   }
+});
+
+// 다크모드 토글 + 아이콘 모션
+function applyTheme(isDark) {
+  document.documentElement.classList.toggle('dark', isDark);
+  themeIcon.className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+}
+
+const savedTheme = localStorage.getItem('theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+applyTheme(savedTheme === 'dark' || (!savedTheme && prefersDark));
+
+themeBtn.addEventListener('click', () => {
+  themeBtn.classList.remove('is-spinning');
+  void themeBtn.offsetWidth;
+  themeBtn.classList.add('is-spinning');
+  applyTheme(!document.documentElement.classList.contains('dark'));
 });
