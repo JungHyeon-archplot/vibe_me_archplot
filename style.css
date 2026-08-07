@@ -37,6 +37,11 @@ h1 {
   color: var(--muted);
 }
 
+/* h1, role, 프로필 사진 가운데 정렬 */
+header {
+  text-align: center;
+}
+
 /* 자기소개 본문 글자 크기·줄간격 */
 .bio {
   font-size: 15px;
@@ -71,6 +76,7 @@ header img {
   display: block;
   width: 200px;
   height: 200px;
+  margin: 0 auto;
   border-radius: 50%;
   border: 3px solid #006400;
   object-fit: cover;
