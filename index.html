@@ -3,31 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>장정현</title>
+
+    <!-- 검색엔진 기본 SEO -->
+    <title>장정현 · 바이브 미 프로젝트</title>
+    <meta name="description" content="불편함을 서비스로 바꾸는 걸 좋아합니다. 장정현의 자기소개 페이지 — farmsystem fullstack2 team.">
+    <meta name="author" content="장정현">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="theme-color" content="#6C5CE7">
+    <link rel="canonical" href="https://introduce-junghyeon.netlify.app/">
+
+    <!-- SNS 공유 카드용 (카톡·슬랙·페북·인스타) -->
+    <meta property="og:title" content="장정현 · 바이브 미 프로젝트">
+    <meta property="og:description" content="불편함을 서비스로 바꾸는 사람">
+    <meta property="og:image" content="https://introduce-junghyeon.netlify.app/og.png">
+    <meta property="og:image:alt" content="장정현 자기소개 페이지 미리보기">
+    <meta property="og:url" content="https://introduce-junghyeon.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="장정현 · 바이브 미">
+
+    <!-- 트위터/X용 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="장정현 · 바이브 미 프로젝트">
+    <meta name="twitter:description" content="불편함을 서비스로 바꾸는 사람">
+    <meta name="twitter:image" content="https://introduce-junghyeon.netlify.app/og.png">
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="image/fabi/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="image/fabi/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/fabi/apple-touch-icon.png">
+
+    <!-- 폰트·스타일 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/213cca295a.js" crossorigin="anonymous"></script>
-    <!-- 검색엔진용 -->
-    <title>장정현 · 바이브 미 프로젝트</title>
-    <meta name="description" content="불편함을 서비스로 바꾸는 걸 좋아합니다." />
 
-    <!-- SNS 공유 카드용 (카톡·슬랙·페북·인스타) -->
-    <meta property="og:title"       content="장정현 · 바이브 미 프로젝트" />
-    <meta property="og:description" content="불편함을 서비스로 바꾸는 사람" />
-    <meta property="og:image"       content="https://introduce-junghyeon.netlify.app/og.png" />
-    <meta property="og:url"         content="https://introduce-junghyeon.netlify.app/" />
-    <meta property="og:type"        content="website" />
-    <meta name="twitter:card"       content="summary_large_image" />
-
-    <!-- 트위터/X용 (한 줄 추가) -->
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <link rel="icon" href="image/fabi/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/svg+xml" href="image/fabi/favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="image/fabi/apple-touch-icon.png" />
-
+    <!-- 구조화 데이터 (Google 검색용 JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "장정현",
+      "url": "https://introduce-junghyeon.netlify.app/",
+      "image": "https://avatars.githubusercontent.com/u/267660619?s=400&u=613a2b1f85c1d7637e55c83d1076c1d41c4d4c1c&v=4",
+      "jobTitle": "farmsystem fullstack2 team",
+      "description": "불편함을 서비스로 바꾸는 걸 좋아합니다.",
+      "email": "mailto:jhsimon7@dgu.ac.kr",
+      "sameAs": [
+        "https://github.com/cheerbeershot",
+        "https://www.facebook.com/profile.php?id=100023778472588"
+      ]
+    }
+    </script>
 </head>
 <body>
     <button class="theme-btn" id="themeBtn" type="button" aria-label="다크모드 전환">
@@ -40,24 +70,27 @@
             <p class="role">farmsystem fullstack2 team</p>
             <img src="https://avatars.githubusercontent.com/u/267660619?s=400&u=613a2b1f85c1d7637e55c83d1076c1d41c4d4c1c&v=4" alt="장정현의 인물사진" width="200" height="200">
         </header>
-        <section class="bio">
+        <section class="bio" aria-label="소개">
             <p>INTJ</p>
+            <p>불편함을 서비스로 바꾸는 걸 좋아합니다.</p>
         </section>
 
-        <nav class="links">
-            <a href="https://www.facebook.com/profile.php?id=100023778472588"><i class="fa-brands fa-facebook"></i> facebook</a>
-            <a href="https://github.com/cheerbeershot"><i class="fa-brands fa-github"></i> github</a>
+        <nav class="links" aria-label="소셜 링크">
+            <a href="https://www.facebook.com/profile.php?id=100023778472588" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-facebook" aria-hidden="true"></i> facebook</a>
+            <a href="https://github.com/cheerbeershot" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i> github</a>
         </nav>
 
-        <p><button class="btn" id="contanctBtn">연락처 보기</button></p>
-        <footer> 2026 jangjunghyeon </footer>
+        <p><button class="btn" id="contanctBtn" type="button">연락처 보기</button></p>
+        <footer>
+            <p>&copy; 2026 jangjunghyeon</p>
+        </footer>
     </main>
 
-    <div class="modal" id="modal">
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <div class="modal__box">
-            <h2>연락처</h2>
-            <p>jhsimon7@dgu.ac.kr</p>
-            <button id="closeBtn">닫기</button>
+            <h2 id="modalTitle">연락처</h2>
+            <p><a href="mailto:jhsimon7@dgu.ac.kr">jhsimon7@dgu.ac.kr</a></p>
+            <button id="closeBtn" type="button">닫기</button>
         </div>
     </div>
 

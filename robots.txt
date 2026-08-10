@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://introduce-junghyeon.netlify.app/sitemap.xml
